@@ -35,7 +35,7 @@ export function createMenu() {
   sectionTwo.classList.add('menu-section');
   sectionThree.classList.add('menu-section');
 
-  sectionOneHeader.textContent = '✼ Rye H ✼';
+  sectionOneHeader.textContent = '✼ Rye ✼';
   sectionOneProdA.textContent = 'Rye bread A';
   sectionOnePriceA.textContent = 'DKK 29';
   sectionOneProdB.textContent = 'Rye bread B';
