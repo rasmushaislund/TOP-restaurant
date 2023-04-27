@@ -1,5 +1,7 @@
 // START //
 
+import './style.css';
+import '../img';
 import { createLayout } from './layout';
 import { createAbout } from './about';
 import { createMenu } from './produce';
