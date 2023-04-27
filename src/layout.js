@@ -59,13 +59,14 @@ export function createLayout() {
   // credits.textContent = 'Credits';
   // social.textContent = 'Social';
 
-  navBar.appendChild(listItem1);
-  navBar.appendChild(listItem1breaker);
-  navBar.appendChild(listItem2);
-  navBar.appendChild(listItem2breaker);
-  navBar.appendChild(listItem3);
-  language.appendChild(languageUK);
-  language.appendChild(languageDK);
+  navBar.append(
+    listItem1,
+    listItem1breaker,
+    listItem2,
+    listItem2breaker,
+    listItem3
+  );
+  language.append(languageUK, languageDK);
   // footer.appendChild(credits);
   // footer.appendChild(social);
 
