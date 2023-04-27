@@ -53,16 +53,14 @@ export function createMenu() {
   sectionThreeProdB.textContent = 'Sweet bread B';
   sectionThreePriceB.textContent = 'DKK 15';
 
-  sectionOne.appendChild(sectionOneHeader);
-  sectionOne.appendChild(sectionOneItemA);
-  sectionOne.appendChild(sectionOneItemB);
-  sectionOne.appendChild(sectionOneItemC);
-  sectionTwo.appendChild(sectionTwoHeader);
-  sectionTwo.appendChild(sectionTwoItemA);
-  sectionTwo.appendChild(sectionTwoItemB);
-  sectionThree.appendChild(sectionThreeHeader);
-  sectionThree.appendChild(sectionThreeItemA);
-  sectionThree.appendChild(sectionThreeItemB);
+  sectionOne.append(
+    sectionOneHeader,
+    sectionOneItemA,
+    sectionOneItemB,
+    sectionOneItemC
+  );
+  sectionTwo.append(sectionTwoHeader, sectionTwoItemA, sectionTwoItemB);
+  sectionThree.append(sectionThreeHeader, sectionThreeItemA, sectionThreeItemB);
   sectionOneItemA.appendChild(sectionOneProdA);
   sectionOneItemA.appendChild(sectionOnePriceA);
   sectionOneItemB.appendChild(sectionOneProdB);
@@ -77,9 +75,7 @@ export function createMenu() {
   sectionThreeItemA.appendChild(sectionThreePriceA);
   sectionThreeItemB.appendChild(sectionThreeProdB);
   sectionThreeItemB.appendChild(sectionThreePriceB);
-  menu.appendChild(sectionOne);
-  menu.appendChild(sectionTwo);
-  menu.appendChild(sectionThree);
+  menu.append(sectionOne, sectionTwo, sectionThree);
 
   return menu;
 }
