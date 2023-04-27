@@ -69,7 +69,8 @@ body {
 .nav-item-breaker,
 .about-container p,
 h4,
-.menu-container {
+.menu-container,
+li {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -121,14 +122,18 @@ h4,
 }
 
 .main-content {
-  /* width: 85%; */
+  width: min(85%, 500px);
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.9);
-  margin-top: 30px;
+  margin: 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 20px;
+  padding: 40px 30px;
+}
+
+h4 {
+  font-size: larger;
 }
 
 .about-container {
@@ -138,7 +143,7 @@ h4,
 }
 
 .about-section {
-  min-width: 40ch;
+  min-width: 30ch;
   max-width: 65ch;
 }
 
@@ -163,8 +168,105 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  column-gap: 150px;
+  column-gap: 110px;
   line-height: 30px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.about-container,
+.menu-container,
+.contact-container {
+  transition: transform 0.2s ease-in-out;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+label {
+  margin-left: 2px;
+  font-weight: 700;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea,
+#contact-submit {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  padding: 5px 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+  border: 2px solid;
+  width: 250px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid rgb(222, 208, 15);
+}
+
+input:valid,
+textarea:valid {
+  border: 2px solid rgb(68, 219, 22);
+}
+
+input[type='checkbox'] {
+  height: 20px;
+  width: 20px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  background-clip: content-box;
+  background-color: inherit;
+  padding: 3px;
+  cursor: pointer;
+}
+
+input[type='checkbox']:hover {
+  border-radius: 50px;
+}
+
+input[type='checkbox']:focus {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+input[type='checkbox']:checked {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50px;
+}
+
+#contact-submit {
+  cursor: pointer;
+}
+
+#contact-submit:hover {
+  opacity: 0.8;
 }
 
 /* .footer {
