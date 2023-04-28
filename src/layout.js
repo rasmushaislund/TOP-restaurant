@@ -23,7 +23,7 @@ export function createLayout() {
 
   header.classList.add('header');
   headerDecor.classList.add('wheat-decor');
-  headerDecor.setAttribute('src', '../img/wheat-icon.svg');
+  headerDecor.setAttribute('src', '../dist/img/wheat-icon.svg');
   headerDecor.setAttribute('alt', 'wheat branch icon');
   subHeader.classList.add('subheader');
   navBar.classList.add('nav-bar');
@@ -38,11 +38,11 @@ export function createLayout() {
   language.classList.add('language-select');
   languageUK.classList.add('icon');
   languageUK.classList.add('flag');
-  languageUK.setAttribute('src', '../img/flag.svg');
+  languageUK.setAttribute('src', '../dist/img/flag.svg');
   languageUK.setAttribute('alt', 'english language');
   languageDK.classList.add('icon');
   languageDK.classList.add('flag');
-  languageDK.setAttribute('src', '../img/flag-dk.svg');
+  languageDK.setAttribute('src', '../dist/img/flag-dk.svg');
   languageDK.setAttribute('alt', 'danish language');
   main.classList.add('main-content');
   // footer.classList.add('footer');
