@@ -1,6 +1,8 @@
 // START //
 
 import wheatIcon from './img/wheat-icon.svg';
+import ukFlag from './img/flag.svg';
+import dkFlag from './img/flag-dk.svg';
 
 export function createLayout() {
   const header = document.createElement('div');
@@ -40,11 +42,11 @@ export function createLayout() {
   language.classList.add('language-select');
   languageUK.classList.add('icon');
   languageUK.classList.add('flag');
-  languageUK.setAttribute('src', '../dist/img/flag.svg');
+  languageUK.setAttribute('src', ukFlag);
   languageUK.setAttribute('alt', 'english language');
   languageDK.classList.add('icon');
   languageDK.classList.add('flag');
-  languageDK.setAttribute('src', '../dist/img/flag-dk.svg');
+  languageDK.setAttribute('src', dkFlag);
   languageDK.setAttribute('alt', 'danish language');
   main.classList.add('main-content');
   // footer.classList.add('footer');
