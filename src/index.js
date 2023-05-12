@@ -5,11 +5,16 @@ import { createLayout } from './layout';
 import { createAbout } from './about';
 import { createMenu } from './produce';
 import { createContact } from './contact';
+import githubLogo from './img/github-logo-white.svg';
 
 // Styling for nav links when active
 const YELLOW = 'rgb(222, 208, 15)';
 const fontWeightNavLink = 700;
 const rotateNavLink = 'rotate(15deg';
+
+// Set src-path for github logo image
+const github = document.querySelector('.github-logo');
+github.setAttribute('src', githubLogo);
 
 // Select container div to populate with layout upon load/re-load
 const content = document.querySelector('#content');
