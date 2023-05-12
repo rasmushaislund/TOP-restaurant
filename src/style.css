@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url('../dist/img/sourdough.jpg');
+  background-image: url('./img/sourdough.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
