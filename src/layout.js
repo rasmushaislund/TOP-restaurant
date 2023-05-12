@@ -1,5 +1,7 @@
 // START //
 
+import wheatIcon from './img/wheat-icon.svg';
+
 export function createLayout() {
   const header = document.createElement('div');
   const headerDecor = document.createElement('img');
@@ -23,7 +25,7 @@ export function createLayout() {
 
   header.classList.add('header');
   headerDecor.classList.add('wheat-decor');
-  headerDecor.setAttribute('src', '../dist/img/wheat-icon.svg');
+  headerDecor.setAttribute('src', wheatIcon);
   headerDecor.setAttribute('alt', 'wheat branch icon');
   subHeader.classList.add('subheader');
   navBar.classList.add('nav-bar');
